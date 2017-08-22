@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'posts#index'
   resources :posts
 
-  post 'posts/new'
+  post 'posts/index'
+  root 'likes#create'
   resources :likes
 end

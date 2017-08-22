@@ -7,5 +7,5 @@
   New post
 <% end %>
 
-<%= button_to "Like", action: "new" %>
+<%= button_to "Like", likes_path, method: :post or redirect_to :back%>
 <%= Like.count %>

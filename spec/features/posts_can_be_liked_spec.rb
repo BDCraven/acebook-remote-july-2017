@@ -7,6 +7,7 @@ RSpec.feature "Timeline", type: :feature do
     fill_in "Message", with: "Hello, world!"
     click_button "Submit"
     click_button "Like"
-    expect(page).to have_content("Like: 1")
+    visit "/posts/index"
+    expect(page).to have_content("1")
   end
 end
